@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tituloTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/tituloTienda"
+    android:background="@android:color/darker_gray"/>
+	
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/tituloTienda"
+        android:layout_below="@+id/tituloTienda"
+        android:layout_marginTop="33dp"        
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:id="@+id/descripcionTienda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/tituloOfertas" />
+
+    <TextView
+        android:id="@+id/tituloOfertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="40dp"
+        android:text="@string/listado_ofertas"
+        android:textStyle="bold|italic"
+        android:fontFamily="sans-serif-condensed"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    	<View
+    android:layout_width="140dp"
+    android:layout_height="1dp"
+    android:layout_marginLeft="10dp"
+    android:layout_below="@+id/tituloOfertas"
+    android:background="@android:color/darker_gray"/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tituloOfertas"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

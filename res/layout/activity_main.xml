@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.catalogo.MainActivity" >
+    <!-- Emmarcamos la lista de tiendas dentro de un TableLayout -->
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="268dp" >
+	
+
+			<TextView
+			    android:layout_width="fill_parent"			   
+			    android:layout_height="68dp"
+			    android:layout_marginTop="15dp"
+			    android:shadowColor="#8a6603"
+			    android:shadowDx="3"
+			    android:shadowDy="2"
+			    android:shadowRadius="1.8"
+			    android:text="Listado de tiendas"
+			    android:textColor="#56A5EC"
+			    android:textSize="25dp"
+			    android:textStyle="bold" />
+	    	
+
+		<TableRow 
+		    android:id="@+id/TableRow1"
+		    android:gravity="center" >
+
+			<TextView
+			    android:id="@+id/Tienda1"
+			    android:layout_height="58dp"
+			    android:layout_marginTop="15dp"
+			    android:textSize="25dp" />
+	    	
+		</TableRow>
+		<TableRow 
+		    android:id="@+id/TableRow2"
+		    android:gravity="center" >
+			<TextView
+			    android:layout_height="58dp"
+			    android:layout_marginTop="15dp"
+			    android:id="@+id/Tienda2"
+			    android:textSize="25dp" />
+		</TableRow>
+		<TableRow 
+		    android:id="@+id/TableRow3"
+		    android:gravity="center" >
+			<TextView
+			    android:layout_height="58dp"
+			    android:layout_marginTop="15dp"
+			    android:id="@+id/Tienda3"
+			    android:textSize="25dp" />
+		</TableRow>
+		<TableRow 
+		    android:id="@+id/TableRow4"
+		    android:gravity="center" >
+			<TextView
+			    android:layout_height="58dp"
+			    android:layout_marginTop="15dp"
+			    android:id="@+id/Tienda4"
+			    android:textSize="25dp" />
+		</TableRow>
+		<TableRow 
+		    android:id="@+id/TableRow5"
+		    android:gravity="center" >
+
+			<TextView
+			    android:id="@+id/Tienda5"
+			    android:layout_height="58dp"
+			    android:layout_marginTop="15dp"
+			    android:textSize="25dp" />
+
+		</TableRow>
+		
+    </TableLayout>
+
+</ScrollView>
